@@ -1,14 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Plantas y Accesorios de Jardinería</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-759e655e9594906b7aa7a0115e8d04dd.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+      >
+
 </head>
-<body>
-    <h1>Hola Mundo!</h1>
-    <p>Nombre: Yaderlyn Fermin</p>
-    <p>Cédula: 30463996</p>
-    <p>Sección: 3</p>
+<body class="bg-gradient-to-b from-white to-green-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="ml-2 text-2xl font-bold text-green-600">GreenThumb</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-green-600">Inicio</a>
+                    <a href="#productos" class="text-gray-700 hover:text-green-600">Productos</a>
+                    <a href="#beneficios" class="text-gray-700 hover:text-green-600">Beneficios</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-green-600">Contacto</a>
+                    <a href="#" class="text-gray-700 hover:text-green-600">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-green-600 rounded-2xl shadow-2xl overflow-hidden">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 p-12 text-white">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-6">Transforma tu Espacio con Naturaleza</h1>
+                        <p class="text-xl mb-8">Plantas de calidad y accesorios para crear tu jardín ideal</p>
+                        <button class="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition-all">
+                            Ver Catálogo
+                        </button>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411" 
+                             alt="Plantas de interior"
+                             class="w-full h-96 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Nuestros Productos</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-green-50 rounded-xl hover:shadow-lg transition-all">
+                    <i class="fas fa-leaf text-green-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Plantas de Interior</h3>
+                    <p class="text-gray-600">Variedades purificadoras de aire y decorativas</p>
+                </div>
+                <div class="p-6 bg-green-50 rounded-xl hover:shadow-lg transition-all">
+                    <i class="fas fa-spa text-green-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Plantas Exteriores</h3>
+                    <p class="text-gray-600">Árboles, arbustos y plantas resistentes</p>
+                </div>
+                <div class="p-6 bg-green-50 rounded-xl hover:shadow-lg transition-all">
+                    <i class="fas fa-trowel text-green-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Herramientas</h3>
+                    <p class="text-gray-600">Equipo profesional para jardinería</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-gray-100 rounded-2xl p-12">
+                <h2 class="text-3xl font-bold text-center mb-12">¿Por qué Elegirnos?</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <i class="fas fa-truck text-green-600 text-5xl mb-4"></i>
+                        <p class="font-semibold">Envío gratis en compras mayores a $100</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-seedling text-green-600 text-5xl mb-4"></i>
+                        <p class="font-semibold">Plantas saludables con garantía</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-headset text-green-600 text-5xl mb-4"></i>
+                        <p class="font-semibold">Asesoría de expertos 24/7</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-recycle text-green-600 text-5xl mb-4"></i>
+                        <p class="font-semibold">Embalaje ecológico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://images.unsplash.com/photo-1598880940080-ff9a29891b85" 
+                     alt="Jardín vertical"
+                     class="w-full h-48 object-cover rounded-lg">
+                <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1" 
+                     alt="Herramientas jardinería"
+                     class="w-full h-48 object-cover rounded-lg">
+                <img src="https://pibadesign.com/wp-content/uploads/2022/08/macetas-decorativas-con-plantas.jpg" 
+                     alt="Macetas decorativas"
+                     class="w-full h-48 object-cover rounded-lg">
+                <img src="https://viverolosmaitenes.com.ar/wp-content/uploads/2021/01/suculentas2.jpg" 
+                     alt="Suculentas"
+                     class="w-full h-48 object-cover rounded-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <footer id="contacto" class="bg-green-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                    <p class="mb-2">San Juan de los Morros,Estado Guárico</p>
+                    <p class="mb-2">Tel: +58 412 893-0565</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Redes Sociales</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-green-300"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="hover:text-green-300"><i class="fab fa-pinterest fa-2x"></i></a>
+                        <a href="#" class="hover:text-green-300"><i class="fab fa-facebook fa-2x"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Horario</h3>
+                    <p>Lunes-Sábado: 9am - 7pm</p>
+                    <p>Domingos: 11am - 5pm</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center border-t border-green-800 pt-8">
+                <p>© 2024 GreenThumb - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
 </body>
 </html>
