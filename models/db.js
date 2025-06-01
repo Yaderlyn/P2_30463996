@@ -14,7 +14,8 @@ class Model {
                 name TEXT NOT NULL,
                 comment TEXT,
                 ip TEXT,
-                created_at TEXT
+                created_at TEXT,
+                country TEXT NOT NULL
             )
         `);
     }

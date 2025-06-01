@@ -13,12 +13,11 @@ class ContactsModel {
             second: '2-digit'
         });
             
-
         return new Promise((resolve, reject) => {
             const stmt = db.prepare(`
                 INSERT INTO contacts 
-                (email, name, comment, ip, created_at) 
-                VALUES (?, ?, ?, ?, ?)
+                (email, name, comment, ip, created_at, country) 
+                VALUES (?, ?, ?, ?, ?, ?)
             `);
             
             stmt.run(
@@ -27,6 +26,7 @@ class ContactsModel {
                 data.comment,
                 data.ip,
                 now,
+                data.country,
                 function(err) {
                     if (err) reject(err);
                     else resolve(this.lastID);

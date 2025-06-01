@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantas y Accesorios de Jardinería</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      data-purpose="Layout StyleSheet"
-      title="Web Awesome"
-      href="/css/app-wa-759e655e9594906b7aa7a0115e8d04dd.css?vsn=d"
-    >
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-759e655e9594906b7aa7a0115e8d04dd.css?vsn=d">
 
-      <link
-        rel="stylesheet"
-        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
-      >
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2CRPD3MM6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N2CRPD3MM6');
+    </script>
+
 
 </head>
+
 <body class="bg-gradient-to-b from-white to-green-50">
     <!-- Navbar -->
-   <nav class="bg-white shadow-lg fixed w-full z-50">
+    <nav class="bg-white shadow-lg fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
@@ -48,14 +53,14 @@
                     <div class="md:w-1/2 p-12 text-white">
                         <h1 class="text-4xl md:text-5xl font-bold mb-6">Transforma tu Espacio con Naturaleza</h1>
                         <p class="text-xl mb-8">Plantas de calidad y accesorios para crear tu jardín ideal</p>
-                        <button class="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition-all">
+                        <button
+                            class="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition-all">
                             Ver Catálogo
                         </button>
                     </div>
                     <div class="md:w-1/2">
-                        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411" 
-                             alt="Plantas de interior"
-                             class="w-full h-96 object-cover">
+                        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411"
+                            alt="Plantas de interior" class="w-full h-96 object-cover">
                     </div>
                 </div>
             </div>
@@ -117,18 +122,14 @@
     <section class="py-12">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <img src="https://images.unsplash.com/photo-1598880940080-ff9a29891b85" 
-                     alt="Jardín vertical"
-                     class="w-full h-48 object-cover rounded-lg">
-                <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1" 
-                     alt="Herramientas jardinería"
-                     class="w-full h-48 object-cover rounded-lg">
-                <img src="https://pibadesign.com/wp-content/uploads/2022/08/macetas-decorativas-con-plantas.jpg" 
-                     alt="Macetas decorativas"
-                     class="w-full h-48 object-cover rounded-lg">
-                <img src="https://viverolosmaitenes.com.ar/wp-content/uploads/2021/01/suculentas2.jpg" 
-                     alt="Suculentas"
-                     class="w-full h-48 object-cover rounded-lg">
+                <img src="https://images.unsplash.com/photo-1598880940080-ff9a29891b85" alt="Jardín vertical"
+                    class="w-full h-48 object-cover rounded-lg">
+                <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1" alt="Herramientas jardinería"
+                    class="w-full h-48 object-cover rounded-lg">
+                <img src="https://pibadesign.com/wp-content/uploads/2022/08/macetas-decorativas-con-plantas.jpg"
+                    alt="Macetas decorativas" class="w-full h-48 object-cover rounded-lg">
+                <img src="https://viverolosmaitenes.com.ar/wp-content/uploads/2021/01/suculentas2.jpg" alt="Suculentas"
+                    class="w-full h-48 object-cover rounded-lg">
             </div>
         </div>
     </section>
@@ -143,24 +144,22 @@
                     <form action="/contact/add" method="POST" class="space-y-6">
                         <div>
                             <label class="block text-gray-700 mb-2">Correo electrónico</label>
-                            <input type="email" name="email" 
-                                   class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500" 
-                                   required>
+                            <input type="email" name="email"
+                                class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500" required>
                         </div>
                         <div>
                             <label class="block text-gray-700 mb-2">Nombres</label>
-                            <input type="text" name="name" 
-                                   class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500" 
-                                   required>
+                            <input type="text" name="name"
+                                class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500" required>
                         </div>
                         <div>
                             <label class="block text-gray-700 mb-2">Comentario</label>
-                            <textarea name="comment" rows="4" 
-                                   class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500"
-                                   required></textarea>
+                            <textarea name="comment" rows="4"
+                                class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500"
+                                required></textarea>
                         </div>
-                        <button type="submit" 
-                                class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition">
+                        <button type="submit"
+                            class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition">
                             Enviar Mensaje
                         </button>
                     </form>
@@ -214,8 +213,10 @@
         </div>
     </footer>
 
-    <a href="#" class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all">
+    <a href="#"
+        class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all">
         <i class="fab fa-whatsapp text-2xl"></i>
     </a>
 </body>
+
 </html>
